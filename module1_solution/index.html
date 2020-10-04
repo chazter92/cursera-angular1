@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head >
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <title>Module 1 Solution</title>
+  </head>
+  <body ng-app="Module1Solution">
+    <h1>Lunch validator</h1>
+    <h2>Module 1 Solution</h2>
+    <div ng-controller="Module1SolutionController">
+      <div>
+        Enter your lunh menu list:
+        <input type="text"
+          ng-model="menuList">
+        <button ng-click="validateMenu()">
+          Check if too much
+        </button>
+      </div>
+      <div>{{validateResult}}</div>
+    </div>
+
+  </body>
+</html>
